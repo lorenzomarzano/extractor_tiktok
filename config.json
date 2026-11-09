@@ -1,0 +1,18 @@
+{
+  "start_date": "2026-10-04",
+  "end_date": "2026-11-04",
+  "query": {
+    "and": [
+      {"operation": "IN", "field_name": "region_code", "field_values": ["IT", "FR"]}
+    ],
+    "or": [
+      {"operation": "EQ", "field_name": "keyword", "field_values": ["protesta"]},
+      {"operation": "EQ", "field_name": "hashtag_name", "field_values": ["manifestation"]}
+    ]
+  },
+  "fields": ["id", "create_time", "username", "video_description", "hashtag_names", "region_code", "view_count", "like_count", "comment_count", "share_count"],
+  "max_count": 100,
+  "max_requests": 100,
+  "is_random": false,
+  "output_dir": "output"
+}
